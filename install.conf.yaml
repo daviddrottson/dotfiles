@@ -1,3 +1,13 @@
-- clean: []
-- link: {}
-- shell: []
+- clean: ["~"]
+# - brew: []
+# - cask: []
+- link:
+    ~/.vimrc: vim/vimrc
+    ~/.vim: vim
+- shell:
+    -
+        - "git submodule update --init --recursive"
+        - "Updating submodules"
+    -
+        - "fonts/install.sh"
+        - "Installing fonts"
