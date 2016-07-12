@@ -2,8 +2,13 @@
 # - brew: []
 # - cask: []
 - link:
+    ~/.zshrc: zshrc
+    ~/.zgen: zgen
     ~/.vimrc: vim/vimrc
     ~/.vim: vim
+    ~/.tmux.conf: tmux.conf
+    ~/.gitignore_global: gitignore_global
+    ~/.gitconfig: gitconfig
 - shell:
     -
         - "git submodule update --init --recursive"
